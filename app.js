@@ -5,10 +5,10 @@ import { Text, View } from "react-native";
 import { registerRootComponent } from "expo";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/LoginScreen";
-import MentorScreen from "./screens/home/mentor/mentor_screen";
-import EventScreen from "./screens/home/event/event_screen";
-import ResourceScreen from "./screens/home/resource/resource_screen";
-import ForumScreen from "./screens/home/forum/forum_screen";
+import MentorScreen from "./screens/MentorScreen";
+import EventScreen from "./screens/EventScreen";
+import ResourceScreen from "./screens/ResourceScreen";
+import ForumScreen from "./screens/ForumScreen";
 import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createStackNavigator();
