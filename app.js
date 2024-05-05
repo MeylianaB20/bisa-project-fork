@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import HomeTabs from "./tabs/HomeTabs";
 import * as Font from "expo-font";
-import { Text, View } from 'react-native';
-import { registerRootComponent } from 'expo';
-import { createStackNavigator } from '@react-navigation/stack';
-import MentorScreen from './screens/home/mentor/mentor_screen';
-import EventScreen from './screens/home/event/event_screen';
-import ResourceScreen from './screens/home/resource/resource_screen';
-import ForumScreen from './screens/home/forum/forum_screen';
-import { NavigationContainer } from '@react-navigation/native';
+import { Text, View } from "react-native";
+import { registerRootComponent } from "expo";
+import { createStackNavigator } from "@react-navigation/stack";
+import LoginScreen from "./screens/LoginScreen";
+import MentorScreen from "./screens/home/mentor/mentor_screen";
+import EventScreen from "./screens/home/event/event_screen";
+import ResourceScreen from "./screens/home/resource/resource_screen";
+import ForumScreen from "./screens/home/forum/forum_screen";
+import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createStackNavigator();
 
