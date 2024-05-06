@@ -1,7 +1,7 @@
 import { ScrollView, SafeAreaView, StyleSheet } from "react-native";
-import Header from "../components/home/Header";
-import Banner from "../components/home/Banner/Banner";
-import Category from "../components/home/Category/Category";
+import Header from "../../components/home/Header";
+import Banner from "../../components/home/Banner/Banner";
+import Category from "../../components/home/Category/Category";
 
 const HomeScreen = () => {
   return (

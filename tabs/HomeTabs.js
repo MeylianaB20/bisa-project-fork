@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/HomeScreen";
-import SettingsScreen from "../screens/SettingsScreen";
-import NotificationsScreen from "../screens/NotificationScreen";
-import ScheduleScreen from "../screens/ScheduleScreen";
+import HomeScreen from "../screens/home/HomeScreen";
+import SettingsScreen from "../screens/settings/SettingsScreen";
+import NotificationsScreen from "../screens/notifications/NotificationScreen";
+import ScheduleScreen from "../screens/schedule/ScheduleScreen";
 
 const Tab = createBottomTabNavigator();
 

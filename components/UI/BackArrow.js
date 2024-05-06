@@ -6,7 +6,7 @@ const BackArrow = () => {
 
   return (
     <TouchableOpacity onPress={() => navigation.goBack()}>
-      <View style={{ marginTop: 40, marginHorizontal: 20 }}>
+      <View>
         <Image
           source={require("../../assets/images/arrow-back.png")}
           style={{ height: 30 }}

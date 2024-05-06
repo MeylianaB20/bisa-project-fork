@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
-import BackArrow from "../components/UI/BackArrow";
+import BackArrow from "../../components/UI/BackArrow";
 
-const ForumScreen = () => {
+const ResourceScreen = () => {
   return (
     <ScrollView>
       <BackArrow />
       <View style={styles.container}>
-        <Text style={styles.text}>Forum</Text>
+        <Text style={styles.text}>Resource</Text>
       </View>
     </ScrollView>
   );
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ForumScreen;
+export default ResourceScreen;

@@ -4,11 +4,11 @@ import * as Font from "expo-font";
 import { Text, View } from "react-native";
 import { registerRootComponent } from "expo";
 import { createStackNavigator } from "@react-navigation/stack";
-import LoginScreen from "./screens/LoginScreen";
-import MentorScreen from "./screens/MentorScreen";
-import EventScreen from "./screens/EventScreen";
-import ResourceScreen from "./screens/ResourceScreen";
-import ForumScreen from "./screens/ForumScreen";
+import LoginScreen from "./screens/login/LoginScreen";
+import MentorScreen from "./screens/mentor/MentorScreen";
+import EventScreen from "./screens/event/EventScreen";
+import ResourceScreen from "./screens/resource/ResourceScreen";
+import ForumScreen from "./screens/forum/ForumScreen";
 import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createStackNavigator();
@@ -46,20 +46,37 @@ export default function App() {
   if (isReady) {
     return (
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="Login"
-          screenOptions={{ headerShown: false }}
-        >
-          <Stack.Screen name="Login">
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Login" options={{ headerShown: false }}>
             {(props) => (
               <LoginScreen {...props} user={user} handleUser={handleUser} />
             )}
           </Stack.Screen>
-          <Stack.Screen name="HomeTabs" component={HomeTabs} />
-          <Stack.Screen name="Mentor" component={MentorScreen} />
-          <Stack.Screen name="Event" component={EventScreen} />
-          <Stack.Screen name="Resource" component={ResourceScreen} />
-          <Stack.Screen name="Forum" component={ForumScreen} />
+          <Stack.Screen
+            name="HomeTabs"
+            component={HomeTabs}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Mentor"
+            component={MentorScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Event"
+            component={EventScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Resource"
+            component={ResourceScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Forum"
+            component={ForumScreen}
+            options={{ headerShown: false }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     );

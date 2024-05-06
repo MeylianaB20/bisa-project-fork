@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
-import BackArrow from "../components/UI/BackArrow";
+import BackArrow from "../../components/UI/BackArrow";
 
-const EventScreen = () => {
+const MentorScreen = () => {
   return (
     <ScrollView>
       <BackArrow />
       <View style={styles.container}>
-        <Text style={styles.text}>Event</Text>
+        <Text style={styles.text}>Mentor</Text>
       </View>
     </ScrollView>
   );
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default EventScreen;
+export default MentorScreen;

@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
-import BackArrow from "../components/UI/BackArrow";
+import Navbar from "../../components/event/Navbar";
 
-const ResourceScreen = () => {
+const EventScreen = () => {
   return (
     <ScrollView>
-      <BackArrow />
+      <Navbar />
       <View style={styles.container}>
-        <Text style={styles.text}>Resource</Text>
+        <Text style={styles.text}>Event</Text>
       </View>
     </ScrollView>
   );
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ResourceScreen;
+export default EventScreen;
