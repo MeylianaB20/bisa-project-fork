@@ -1,13 +1,15 @@
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Dimensions } from "react-native";
 import BackArrow from "../UI/BackArrow";
-import CreateEventButton from "./CreateEventButton";
+import CreateButton from "../UI/CreateButton";
 
 const Navbar = () => {
   return (
     <View style={styles.layout}>
       <BackArrow />
       <Text style={styles.headerText}>Event Page</Text>
-      <CreateEventButton />
+      <View style={styles.createEvent}>
+        <CreateButton />
+      </View>
     </View>
   );
 };
@@ -26,6 +28,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     paddingLeft: 20,
+  },
+
+  createEvent: {
+    marginTop: 3,
+    marginLeft: Dimensions.get("window").width * 0.4,
   },
 });
 

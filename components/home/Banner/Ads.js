@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   box: {
-    paddingLeft: Dimensions.get("window").width / 22,
+    paddingLeft: Dimensions.get("window").width * 0.045,
     paddingRight: 30,
     height: 168.84,
     overflow: "hidden",
