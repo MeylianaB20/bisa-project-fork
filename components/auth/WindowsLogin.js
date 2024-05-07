@@ -15,7 +15,7 @@ const WindowsLogin = () => {
   const navigation = useNavigation();
 
   const discovery = useAutoDiscovery(
-    "https://login.microsoftonline.com/9029d1bf-84ff-4fb3-80de-e7dc18e9810b/v2.0"
+    "https://login.microsoftonline.com/common"
   );
 
   const redirectUri = makeRedirectUri({
