@@ -1,4 +1,11 @@
-import { View, StyleSheet, Image, ScrollView, Animated } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Image,
+  ScrollView,
+  Animated,
+  Dimensions,
+} from "react-native";
 
 const Ads = ({ bannerWidth, totalBanners, scrollX }) => {
   return (
@@ -7,7 +14,7 @@ const Ads = ({ bannerWidth, totalBanners, scrollX }) => {
       style={styles.scrollContainer}
       showsHorizontalScrollIndicator={false}
       decelerationRate="fast"
-      snapToInterval={bannerWidth + 60}
+      snapToInterval={bannerWidth + 45}
       snapToAlignment="start"
       onScroll={Animated.event(
         [{ nativeEvent: { contentOffset: { x: scrollX } } }],
@@ -32,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   box: {
-    paddingLeft: 30,
+    paddingLeft: Dimensions.get("window").width / 22,
     paddingRight: 30,
     height: 168.84,
     overflow: "hidden",
