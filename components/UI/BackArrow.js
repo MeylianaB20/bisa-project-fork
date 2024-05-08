@@ -1,5 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity, View, Image } from "react-native";
+import { TouchableOpacity, View, Image, StyleSheet } from "react-native";
 
 const BackArrow = () => {
   const navigation = useNavigation();
@@ -9,11 +9,18 @@ const BackArrow = () => {
       <View>
         <Image
           source={require("../../assets/images/arrow-back.png")}
-          style={{ height: 30 }}
+          style={styles.image_style}
         />
       </View>
     </TouchableOpacity>
   );
 };
+
+const styles = StyleSheet.create({
+  image_style: {
+    height: 25,
+    width: 30,
+  },
+});
 
 export default BackArrow;
