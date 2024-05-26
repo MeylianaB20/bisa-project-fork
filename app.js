@@ -6,6 +6,9 @@ import { registerRootComponent } from "expo";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/login/LoginScreen";
 import MentorScreen from "./screens/mentor/MentorScreen";
+import CourseDetail from "./screens/mentor/CourseDetail";
+import MentorDetail from "./screens/mentor/MentorDetail";
+import MentorChat from "./screens/mentor/MentorChat";
 import EventScreen from "./screens/event/EventScreen";
 import ResourceScreen from "./screens/resource/ResourceScreen";
 import ForumScreen from "./screens/forum/ForumScreen";
@@ -62,6 +65,21 @@ export default function App() {
           <Stack.Screen
             name="Mentor"
             component={MentorScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="CourseDetail"
+            component={CourseDetail}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="MentorDetail"
+            component={MentorDetail}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="MentorChat"
+            component={MentorChat}
             options={{ headerShown: false }}
           />
           <Stack.Screen
