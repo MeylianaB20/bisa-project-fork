@@ -11,6 +11,7 @@ import ResourceScreen from "./screens/resource/ResourceScreen";
 import ForumScreen from "./screens/forum/ForumScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import EventDetailsScreen from "./screens/event/EventDetailsScreen";
+import CreateEventScreen from "./screens/event/CreateEventScreen";
 
 const Stack = createStackNavigator();
 
@@ -71,6 +72,11 @@ export default function App() {
           <Stack.Screen
             name="EventDetails"
             component={EventDetailsScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="CreateEvent"
+            component={CreateEventScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen

@@ -1,6 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, View, Text, TouchableOpacity, Alert } from "react-native";
-import React, { useState } from "react";
 
 const SignInButton = ({ user }) => {
   const navigation = useNavigation();
@@ -14,13 +13,13 @@ const SignInButton = ({ user }) => {
     }
     if (email == "kenz" && password == "Pass123") {
       navigation.navigate("HomeTabs", { email: email });
-    } else if(email == "bourne" && password == "12345"){
+    } else if (email == "bourne" && password == "12345") {
       navigation.navigate("HomeTabs", { email: email });
-    } else if(email == "winsen" && password == "12345"){
+    } else if (email == "winsen" && password == "12345") {
       navigation.navigate("HomeTabs", { email: email });
-    } else if(email == "meyliana" && password == "12345"){
+    } else if (email == "meyliana" && password == "12345") {
       navigation.navigate("HomeTabs", { email: email });
-    } else if(email == "divia" && password == "12345"){
+    } else if (email == "divia" && password == "12345") {
       navigation.navigate("HomeTabs", { email: email });
     } else {
       Alert.alert("Invalid email or password");
@@ -31,7 +30,9 @@ const SignInButton = ({ user }) => {
   return (
     <View style={styles.layout}>
       <TouchableOpacity onPress={() => signIn()} disabled={!email || !password}>
-        <View style={!email || !password ? styles.buttonDisabled : styles.button}>
+        <View
+          style={!email || !password ? styles.buttonDisabled : styles.button}
+        >
           <Text style={styles.buttonText}>Sign In</Text>
         </View>
       </TouchableOpacity>

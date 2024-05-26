@@ -1,11 +1,11 @@
-import { StyleSheet, View, Text, Dimensions } from "react-native";
+import { View, Text, StyleSheet, Dimensions } from "react-native";
 import BackArrow from "../UI/BackArrow";
 
-const NavbarEventDetails = () => {
+const NavbarCreateEvent = () => {
   return (
     <View style={styles.layout}>
       <BackArrow />
-      <Text style={styles.headerText}>Event Details</Text>
+      <Text style={styles.headerText}>Create Event</Text>
     </View>
   );
 };
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NavbarEventDetails;
+export default NavbarCreateEvent;

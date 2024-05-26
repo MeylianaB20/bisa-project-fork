@@ -18,6 +18,7 @@ const EventScreen = () => {
       </View>
       <ScrollView contentContainerStyle={styles.scrollViewLayout}>
         <EventBox
+          title="Tech Event"
           date="15 Maret 2024"
           imageUrl={require("../../assets/images/event-image.png")}
           desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
@@ -26,6 +27,7 @@ const EventScreen = () => {
           mahasiswa Bina Nusantara tetap terupdate..."
         />
         <EventBox
+          title="Tech Event"
           date="15 Maret 2024"
           imageUrl={require("../../assets/images/event-image.png")}
           desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
@@ -34,6 +36,7 @@ const EventScreen = () => {
           mahasiswa Bina Nusantara tetap terupdate..."
         />
         <EventBox
+          title="Tech Event"
           date="15 Maret 2024"
           imageUrl={require("../../assets/images/event-image.png")}
           desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
@@ -42,6 +45,7 @@ const EventScreen = () => {
           mahasiswa Bina Nusantara tetap terupdate..."
         />
         <EventBox
+          title="Tech Event"
           date="15 Maret 2024"
           imageUrl={require("../../assets/images/event-image.png")}
           desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.

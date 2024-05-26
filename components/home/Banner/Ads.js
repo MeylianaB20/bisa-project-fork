@@ -14,7 +14,7 @@ const Ads = ({ bannerWidth, totalBanners, scrollX }) => {
       style={styles.scrollContainer}
       showsHorizontalScrollIndicator={false}
       decelerationRate="fast"
-      snapToInterval={bannerWidth + Dimensions.get("window").width * 0.15}
+      snapToInterval={bannerWidth + Dimensions.get("window").width * 0.13}
       snapToAlignment="start"
       onScroll={Animated.event(
         [{ nativeEvent: { contentOffset: { x: scrollX } } }],
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   box: {
-    paddingLeft: Dimensions.get("window").width * 0.08,
+    paddingLeft: Dimensions.get("window").width * 0.05,
     paddingRight: 30,
     height: 168.84,
     overflow: "hidden",
