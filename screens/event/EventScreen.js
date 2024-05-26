@@ -1,29 +1,91 @@
 import React from "react";
-import { View, Text, StyleSheet, Dimensions } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import { StyleSheet, View, Text, Dimensions } from "react-native";
 import Navbar from "../../components/event/Navbar";
+import SearchBar from "../../components/event/SearchBar";
+import EventBox from "../../components/event/EventBox";
+import { ScrollView } from "react-native-gesture-handler";
 
 const EventScreen = () => {
   return (
-    <ScrollView>
+    <View style={styles.backgroundLayout}>
       <Navbar />
-      <View style={styles.container}>
-        <Text style={styles.text}>Event</Text>
+      <View style={styles.layout}>
+        <SearchBar />
+        <View style={styles.eventBlock}>
+          <Text style={styles.eventText}>Events</Text>
+          <View style={styles.line} />
+        </View>
       </View>
-    </ScrollView>
+      <ScrollView contentContainerStyle={styles.scrollViewLayout}>
+        <EventBox
+          date="15 Maret 2024"
+          imageUrl={require("../../assets/images/event-image.png")}
+          desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
+          Bertema tekonologi dan inovasi. Event ini berisi tentang Talkshow dan
+          berbagai teknologi-teknologi baru yang telah dikembangkan sehingga
+          mahasiswa Bina Nusantara tetap terupdate..."
+        />
+        <EventBox
+          date="15 Maret 2024"
+          imageUrl={require("../../assets/images/event-image.png")}
+          desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
+          Bertema tekonologi dan inovasi. Event ini berisi tentang Talkshow dan
+          berbagai teknologi-teknologi baru yang telah dikembangkan sehingga
+          mahasiswa Bina Nusantara tetap terupdate..."
+        />
+        <EventBox
+          date="15 Maret 2024"
+          imageUrl={require("../../assets/images/event-image.png")}
+          desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
+          Bertema tekonologi dan inovasi. Event ini berisi tentang Talkshow dan
+          berbagai teknologi-teknologi baru yang telah dikembangkan sehingga
+          mahasiswa Bina Nusantara tetap terupdate..."
+        />
+        <EventBox
+          date="15 Maret 2024"
+          imageUrl={require("../../assets/images/event-image.png")}
+          desc="Event yang diadakan oleh salah satu UKM di Universitas Bina Nusantara.
+          Bertema tekonologi dan inovasi. Event ini berisi tentang Talkshow dan
+          berbagai teknologi-teknologi baru yang telah dikembangkan sehingga
+          mahasiswa Bina Nusantara tetap terupdate..."
+        />
+      </ScrollView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  backgroundLayout: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    height: Dimensions.get("window").height * 0.9,
+    backgroundColor: "white",
   },
-  text: {
-    fontSize: 24,
-    fontWeight: "bold",
+
+  layout: {
+    height: 100,
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "white",
+    paddingTop: 20,
+  },
+
+  eventText: {
+    paddingTop: 2,
+    fontSize: 16,
+    color: "#1C61C7",
+    textAlign: "center",
+  },
+
+  line: {
+    paddingTop: 10,
+    borderBottomColor: "#1C61C7",
+    borderBottomWidth: 3,
+    width: 330,
+  },
+
+  scrollViewLayout: {
+    flexGrow: 1,
+    alignItems: "center",
+    paddingBottom: 40,
   },
 });
 
