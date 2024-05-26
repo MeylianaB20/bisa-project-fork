@@ -6,7 +6,9 @@ import BackArrow from "../../components/UI/BackArrow";
 const ResourceScreen = () => {
   return (
     <ScrollView>
-      <BackArrow />
+      <View style={styles.arrow}>
+        <BackArrow />
+      </View>
       <View style={styles.container}>
         <Text style={styles.text}>Resource</Text>
       </View>
@@ -15,6 +17,11 @@ const ResourceScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  arrow: {
+    paddingTop: 50,
+    paddingLeft: 10,
+  },
+
   container: {
     flex: 1,
     justifyContent: "center",

@@ -7,6 +7,7 @@ import SearchButton from "../../components/forum/SearchButton";
 const ForumScreen = () => {
   return (
     <ScrollView>
+      <View style={styles.arrow}></View>
       <View style={styles.container}>
         <View style={styles.header_container}>
           <View style={styles.back_arrow_container}>
@@ -42,6 +43,11 @@ const ForumScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  arrow: {
+    paddingTop: 50,
+    paddingLeft: 10,
+  },
+
   container: {
     display: "flex",
     flexDirection: "column",
