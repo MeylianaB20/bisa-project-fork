@@ -16,6 +16,7 @@ const LoginScreen = ({ handleUser, user }) => {
       <SignInButton user={user} />
       <SignInBreaker />
       <WindowsLogin />
+      {/* Ini Tombol biar langsung pergi ke page yang lagi kita develop, ganti2 aja */}
       {/* <TouchableOpacity onPress={() => navigation.navigate('Mentor')} style={styles.developButton}>
         <View style={{justifyContent: "center"}}>
           <Text>Develop</Text>
