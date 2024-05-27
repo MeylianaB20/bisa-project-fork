@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-const Header = () => {
+const Header = ({email}) => {
   return (
     <View style={styles.layout}>
-      <Text style={styles.helloText}>Hello, Kenzie!</Text>
+      <Text style={styles.helloText}>Hello, {email}!</Text>
       <Text style={styles.subText}>What do you need today?</Text>
     </View>
   );

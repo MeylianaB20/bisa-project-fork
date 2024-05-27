@@ -6,11 +6,15 @@ import { registerRootComponent } from "expo";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/login/LoginScreen";
 import MentorScreen from "./screens/mentor/MentorScreen";
+import CourseDetail from "./screens/mentor/CourseDetail";
+import MentorDetail from "./screens/mentor/MentorDetail";
+import MentorChat from "./screens/mentor/MentorChat";
 import EventScreen from "./screens/event/EventScreen";
 import ResourceScreen from "./screens/resource/ResourceScreen";
 import ForumScreen from "./screens/forum/ForumScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import EventDetailsScreen from "./screens/event/EventDetailsScreen";
+import CreateEventScreen from "./screens/event/CreateEventScreen";
 
 const Stack = createStackNavigator();
 
@@ -64,6 +68,21 @@ export default function App() {
             options={{ headerShown: false }}
           />
           <Stack.Screen
+            name="CourseDetail"
+            component={CourseDetail}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="MentorDetail"
+            component={MentorDetail}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="MentorChat"
+            component={MentorChat}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
             name="Event"
             component={EventScreen}
             options={{ headerShown: false }}
@@ -71,6 +90,11 @@ export default function App() {
           <Stack.Screen
             name="EventDetails"
             component={EventDetailsScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="CreateEvent"
+            component={CreateEventScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen

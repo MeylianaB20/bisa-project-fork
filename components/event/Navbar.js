@@ -10,7 +10,7 @@ const Navbar = () => {
         <Text style={styles.headerText}>Event Page</Text>
       </View>
       <View style={styles.createEvent}>
-        <CreateButton />
+        <CreateButton stack="CreateEvent" />
       </View>
     </View>
   );
@@ -19,7 +19,7 @@ const Navbar = () => {
 const styles = StyleSheet.create({
   layout: {
     backgroundColor: "white",
-    paddingTop: 65,
+    paddingTop: 60,
     paddingLeft: 15,
     flexDirection: "row",
     width: Dimensions.get("window").width,

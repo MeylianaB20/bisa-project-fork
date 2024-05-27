@@ -1,10 +1,8 @@
 import {
   StyleSheet,
-  Text,
   View,
   TextInput,
   Image,
-  Dimensions,
 } from "react-native";
 
 const SearchBar = () => {

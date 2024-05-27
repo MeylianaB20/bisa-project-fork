@@ -6,13 +6,16 @@ import ScheduleScreen from "../screens/schedule/ScheduleScreen";
 
 const Tab = createBottomTabNavigator();
 
-const Home = () => {
+const Home = ({ route }) => {
+  const email = route.params.email;
+
   return (
     <Tab.Navigator>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{ headerShown: false }}
+        initialParams={{ email: email }}
       />
       <Tab.Screen
         name="Schedule"
