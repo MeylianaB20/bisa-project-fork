@@ -256,7 +256,6 @@ const ForumScreen = () => {
                     </View>
                   </View>
                 </View>
-
                 <View
                   style={{
                     marginHorizontal: 90,
@@ -285,7 +284,6 @@ const ForumScreen = () => {
                     source={require("../../assets/images/profile-picture.png")}
                   ></Image>
                 </View>
-
                 <View
                   style={{
                     display: "flex",
