@@ -18,7 +18,6 @@ const CreateEventTextBox = ({ inputText, inputDesc }) => {
 
 const styles = StyleSheet.create({
   layout: {
-    paddingLeft: Dimensions.get("window").width * 0.04,
     paddingTop: 12,
   },
 

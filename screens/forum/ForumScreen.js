@@ -1,17 +1,7 @@
-import React, { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Dimensions,
-  Image,
-  Button,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import BackArrow from "../../components/UI/BackArrow";
 import SearchButton from "../../components/forum/SearchButton";
-import { Redirect } from "expo-router";
 import ViewAllButton from "../../components/forum/ViewAllButton";
 import DiscussionSelections from "../../components/forum/DiscussionSelections";
 

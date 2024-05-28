@@ -1,9 +1,9 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-const SendRequestButton = () => {
+const SendRequestButton = ({ onChange }) => {
   return (
     <View style={{ alignItems: "center", marginTop: 20 }}>
-      <TouchableOpacity style={styles.layout}>
+      <TouchableOpacity onPress={() => onChange()} style={styles.layout}>
         <Text style={styles.sendRequestText}>Send Request</Text>
       </TouchableOpacity>
     </View>

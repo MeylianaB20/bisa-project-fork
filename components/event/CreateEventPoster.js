@@ -22,14 +22,12 @@ const CreateEventPoster = () => {
 const styles = StyleSheet.create({
   posterText: {
     fontSize: 14,
-    paddingLeft: 10,
     paddingTop: 20,
   },
 
   dropbox: {
     width: 333,
     height: 177,
-    marginLeft: 10,
     backgroundColor: "#EDFFFF",
     justifyContent: "center",
     marginTop: 5,
