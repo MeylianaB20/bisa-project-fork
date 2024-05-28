@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   sendRequestText: {
     color: "white",
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
   },
 });
 

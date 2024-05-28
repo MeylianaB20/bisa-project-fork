@@ -86,13 +86,13 @@ const styles = StyleSheet.create({
 
   header: {
     fontSize: 16,
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
   },
 
   subheader: {
     fontSize: 13,
     color: "#979797",
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
     paddingTop: 5,
   },
 
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
   descriptionText: {
     paddingTop: 10,
     textAlign: "justify",
+    fontFamily: "Inter-Regular",
   },
 });
 

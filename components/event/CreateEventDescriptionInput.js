@@ -3,7 +3,9 @@ import { View, Text, TextInput, StyleSheet, Dimensions } from "react-native";
 const CreateEventDescriptionInput = ({ inputText, inputDesc }) => {
   return (
     <View style={styles.layout}>
-      <Text style={{ fontSize: 14 }}>{inputText}</Text>
+      <Text style={{ fontSize: 14, fontFamily: "Inter-Regular" }}>
+        {inputText}
+      </Text>
       <View style={styles.inputBox}>
         <TextInput
           style={{ fontSize: 10 }}
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     borderColor: "black",
+    fontFamily: "Inter-Regular",
   },
 });
 

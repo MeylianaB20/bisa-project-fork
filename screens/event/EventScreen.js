@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#1C61C7",
     textAlign: "center",
+    fontFamily: "Inter-Regular",
   },
 
   line: {

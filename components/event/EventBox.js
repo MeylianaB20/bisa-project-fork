@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   layout: {
     marginTop: 20,
     width: 335,
-    height: 330,
+    height: 350,
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
   title: {
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
     fontSize: 15,
     paddingTop: 10,
   },
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     paddingRight: 20,
     color: "#C2B6B6",
+    fontFamily: "Inter-Regular",
   },
 
   imageLayout: {
@@ -64,6 +65,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     paddingHorizontal: 15,
     paddingTop: 7,
+    fontFamily: "Inter-Regular",
   },
 });
 

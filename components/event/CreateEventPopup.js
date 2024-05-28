@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   alertHeader: {
     paddingTop: 13,
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
     fontSize: 14,
   },
 
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#90949D",
     fontSize: 10,
+    fontFamily: "Inter-Regular",
   },
 });
 

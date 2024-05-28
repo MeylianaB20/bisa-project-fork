@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   posterText: {
     fontSize: 14,
     paddingTop: 20,
+    fontFamily: "Inter-Regular",
   },
 
   dropbox: {
@@ -38,6 +39,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingHorizontal: 50,
     color: "#6E7787",
+    fontFamily: "Inter-Regular",
   },
 
   uploadInput: {
@@ -52,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: "#565E6C",
     textAlign: "center",
+    fontFamily: "Inter-Regular",
   },
 });
 

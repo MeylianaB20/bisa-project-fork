@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   textInfo: {
     fontSize: 13,
     color: "#C2B6B6",
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
     paddingLeft: 7,
   },
 });

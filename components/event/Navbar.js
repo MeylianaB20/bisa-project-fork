@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
 
   headerText: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontFamily: "Inter-Bold",
     paddingLeft: 20,
   },
 

@@ -1,9 +1,4 @@
-import {
-  StyleSheet,
-  View,
-  TextInput,
-  Image,
-} from "react-native";
+import { StyleSheet, View, TextInput, Image } from "react-native";
 
 const SearchBar = () => {
   return (
@@ -23,10 +18,12 @@ const styles = StyleSheet.create({
     height: 44,
     backgroundColor: "#F4F3F3",
     borderRadius: 12,
+    fontFamily: "Inter-Regular",
   },
 
   searchText: {
     paddingLeft: 10,
+    fontFamily: "Inter-Regular",
   },
 });
 
