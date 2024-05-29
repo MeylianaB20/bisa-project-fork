@@ -26,6 +26,7 @@
     "react-native": "0.71.14",
     "react-native-asset": "^2.1.1",
     "react-native-calendars": "^1.1305.0",
+    "react-native-document-picker": "^9.2.0",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-pager-view": "6.1.2",
     "react-native-reanimated": "~2.14.4",
