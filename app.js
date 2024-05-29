@@ -15,6 +15,8 @@ import ForumScreen from "./screens/forum/ForumScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import EventDetailsScreen from "./screens/event/EventDetailsScreen";
 import CreateEventScreen from "./screens/event/CreateEventScreen";
+import UploadResource from "./screens/resource/UploadResource";
+import ResourceDetail from "./screens/resource/ResourceDetail";
 
 const Stack = createStackNavigator();
 
@@ -105,6 +107,16 @@ export default function App() {
           <Stack.Screen
             name="Forum"
             component={ForumScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="UploadResource"
+            component={UploadResource}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="ResourceDetail"
+            component={ResourceDetail}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
